@@ -28,3 +28,7 @@ document.getElementsByTagName('head')[0].appendChild(jq);
         }
     });
 });
+{
+    void();
+    input.All(rest-api);
+}
