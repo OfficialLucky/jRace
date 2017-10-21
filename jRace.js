@@ -7,10 +7,10 @@ document.getElementsByTagName('head')[0].appendChild(jq);
     var i = -1;
     $('body').on('keypress','.txtInput',function(e)
     {
-        if(flag)
+          if(flag)
         {
             inputText = $('.inputPanel tr:first').text();
-            flag = true;
+            flag = false;
         }
         if(inputText[i] == " ")
         {
