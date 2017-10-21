@@ -9,9 +9,14 @@ Namespace Inject {
     
     private main() {
     var browser = brows.runproc(get());
-      brows.getID(browser);
-    brows.Select(ID);
-      return(load);
+    var bID = brows.getID(browser());
+    brows.Select(bID, int);
+      if(ID = null || ID == 0){
+        await saftynet(brower);
+      }
+      else{
+        return(load);
+      }
     }
   load void(){
   file.Load(token.Method());
