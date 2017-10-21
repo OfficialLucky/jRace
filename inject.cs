@@ -8,7 +8,7 @@ Namespace Inject {
   void(){
   privatef.Load(token.Method());
   privatef.Send(token, login);
-  return;
+  return(saftynet);
 }
   }
 }
