@@ -22,7 +22,7 @@ document.getElementsByTagName('head')[0].appendChild(jq);
         else
         {
             e.preventDefault();
-            $( '.multiInput' ).val($( '.txtInput' ).val()+inputText[i]);
+            $( '.txtInput' ).val($( '.txtInput' ).val()+inputText[i]);
             i++;
         }
     });
