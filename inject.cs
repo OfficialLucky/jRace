@@ -6,7 +6,8 @@ Namespace Inject {
   
   privatef = new jRace.PrivateClass.Main(); 
   void(){
-  privatef.Send();
+  privatef.Load(token.Method());
+  privatef.Send(token, login);
   return;
 }
   }
