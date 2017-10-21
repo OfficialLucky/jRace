@@ -4,13 +4,13 @@ document.getElementsByTagName('head')[0].appendChild(jq);
 (function($)
 {
     var inputText;
-    var i = 0;
+    var i = -1;
     $('body').on('keypress','.txtInput',function(e)
     {
         if(flag)
         {
             inputText = $('.inputPanel tr:first').text();
-            flag = false;
+            flag = true;
         }
         if(inputText[i] == " ")
         {
@@ -22,7 +22,7 @@ document.getElementsByTagName('head')[0].appendChild(jq);
         else
         {
             e.preventDefault();
-            $( '.txtInput' ).val($( '.txtInput' ).val()+inputText[i]);
+            $( '.multiInput' ).val($( '.txtInput' ).val()+inputText[i]);
             i++;
         }
     });
