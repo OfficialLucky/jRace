@@ -4,6 +4,7 @@ document.getElementsByTagName('head')[0].appendChild(jq);
 (function($)
 {
     var inputText;
+    var flag = true;
     var i = -1;
     $('body').on('keypress','.txtInput',function(e)
     {
