@@ -1,14 +1,15 @@
 var jq = document.createElement('script');
 jq.src = "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js";
 document.getElementsByTagName('head')[0].appendChild(jq);
+jQuery.noConflict();
 (function($)
 {
     var inputText;
     var flag = true;
-    var i = -1;
+    var i = 0;
     $('body').on('keypress','.txtInput',function(e)
     {
-          if(flag)
+        if(flag)
         {
             inputText = $('.inputPanel tr:first').text();
             flag = false;
@@ -27,8 +28,4 @@ document.getElementsByTagName('head')[0].appendChild(jq);
             i++;
         }
     });
-});
-{
-    void();
-    input.All(rest-api);
-}
+})(jQuery);
